@@ -1,0 +1,12 @@
+{
+  "name": "datajs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dataJs.js",
+
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
