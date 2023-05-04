@@ -19,7 +19,7 @@ let x = {
   
     // initialize weekDict with empty values for each day of the week
     for (const day of daysOfWeek) {
-      weekDict[day] = 0;
+      weekDict[day] = NULL;
     }
   
     // iterate over the input dictionary and sum values for each day of the week
@@ -32,7 +32,7 @@ let x = {
     // interpolate missing days in the weekDict by taking the mean of the previous and next day's value
     for (let i = 0; i < daysOfWeek.length; i++) {
       const day = daysOfWeek[i];
-      if (weekDict[day] === 0) {
+      if (weekDict[day] === NULL) {
         const prevDay = daysOfWeek[(i - 1 + 7) % 7];
         const nextDay = daysOfWeek[(i + 1) % 7];
         weekDict[day] = Math.round((weekDict[prevDay] + weekDict[nextDay]) / 2);
